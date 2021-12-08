@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+greet = ['Bonjour Rails!', 'Good morning Rails!', 'Guten Morgen Rails!', 'Buenos dias Rails!', 'Tere Rails!']
+
+5.times do |i|
+	 Message.create(text: greet[i])
+end
