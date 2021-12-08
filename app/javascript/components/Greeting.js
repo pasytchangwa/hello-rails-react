@@ -25,11 +25,10 @@ const Greeting = () => {
             <p className="lead">
               Get random greetings from different languages.
             </p>
-            <hr className="my-4" />
             <button
               type="button"
               onClick={() => fetchRandomGreeting()}
-              className="btn btn-lg btn-primary"
+              className="btn"
             >
               Get random greeting
             </button>

@@ -4,5 +4,10 @@ Rails.application.routes.draw do
     get 'greetings', to: 'greetings#index'
   end
 
-  root 'static#index'
+  get '*page', to:'statics#index', constraints:->(req) do
+    !req.xhr? && req.format.html?
+  end
+
+  root 'statics#index'
+
 end
